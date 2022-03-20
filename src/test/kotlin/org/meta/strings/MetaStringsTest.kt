@@ -8,6 +8,11 @@ internal class MetaStringsTest {
     private val testMetaStrings: MetaStrings = MetaStrings()
 
     @Test
+    fun oneEditAway() {
+        assertFalse(testMetaStrings.oneEditAway("", ""))
+    }
+
+    @Test
     fun oneEditAway1() {
         assertTrue(testMetaStrings.oneEditAway("abc", "ab"))
     }
